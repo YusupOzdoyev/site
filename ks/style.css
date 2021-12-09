@@ -140,27 +140,31 @@ h2 {
     margin-bottom: 57px;
 }
 
-.row {
+.shoes-list {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -15px;
 }
 
-.row__item {
+.shoes-item {
     box-sizing: border-box;
-    width: calc(100% / 12 * 3 - 30px);
+    width: calc(25% - 30px);
     margin: 15px;
+    overflow: hidden;
     border: 1px solid white;
     border-radius: 8px;
 }
 
-.row__item > p {
+.shoes-item > p {
     text-align: center;
 }
 
-.row__item > img {
-    width: 100%;
+
+.shoes-item__img img {
+  display: block;
+  max-width: 100%;
 }
+
 
 .catalog {
   margin-top: 45px;
@@ -197,14 +201,24 @@ h2 {
   align-items: center;
   padding-left: 83px;
 }
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.contacts > svg {
+  margin-right: 10px;
+}
+
 .contacts-text {
   font-weight: 500;
   font-size: 17px;
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.05em;
+  color: #F6F6F6;
   opacity: 0.5;
-  margin-bottom: 14px;
 }
 
 .contacts-contacts {
@@ -249,4 +263,11 @@ h2 {
   text-align: center;
   padding-bottom: 26px;
   padding-top: 71px;
+}
+
+.topscroll  {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 999;
 }
